@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { HomeModule } from './home/home.module';
+import { ScheduleModule } from './schedule/schedule.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HomeModule } from './home/home.module';
     AppRoutingModule,
     MatSidenavModule,
     NavbarModule,
-    HomeModule
+    HomeModule,
+    ScheduleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

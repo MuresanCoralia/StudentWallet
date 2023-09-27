@@ -1,15 +1,10 @@
 mat-toolbar {
     background-color: orange;
-    gap: 1rem;
+    gap: 16px;
+
     .login {
         position: absolute;
-        right: 1rem;
-        font-weight: 700;
-        font-size: large;
-    }
-    .signup {
-        position: absolute;
-        right: 6rem;
+        right: 16px;
         font-weight: 700;
         font-size: large;
     }
