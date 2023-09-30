@@ -1,11 +1,17 @@
 mat-toolbar {
-    background-color: orange;
+    position: relative;
+    background-color: rgb(25, 25, 25);
     gap: 16px;
 
     .login {
         position: absolute;
-        right: 16px;
+        right: 40px;
         font-weight: 700;
         font-size: large;
+        color: red;
+    }
+
+    mat-icon {
+        color: orange;
     }
 }

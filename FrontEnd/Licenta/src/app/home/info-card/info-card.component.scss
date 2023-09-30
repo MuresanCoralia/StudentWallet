@@ -1,0 +1,16 @@
+.info {
+    background-color: white;
+    text-align: left;
+    border-radius: 16px;
+    padding: 20px;
+
+    mat-card-title {
+        font-size: larger;
+        font-weight: 700;
+
+        .mat-icon {
+            vertical-align: middle;
+            padding-right: 8px;
+        }
+    }
+}
