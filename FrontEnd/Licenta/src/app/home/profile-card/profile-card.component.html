@@ -1,12 +1,12 @@
 <mat-card class="profile">
-    <mat-card-content>
+    <mat-card-content *ngIf="studentInfo">
         <img src="assets/avatar.jpg">
-        <h1>Name</h1>
+        <h1>{{ studentInfo.name }} {{ studentInfo.surname }}</h1>
         <div class="line"></div>
         <div class="details">
-            <h3>Specialization: </h3>
-            <h3>Year: </h3>
-            <h3>Group: </h3>
+            <h3>Specialization: {{ studentInfo.specialization }}</h3>
+            <h3>Year: {{ studentInfo.year }}</h3>
+            <h3>Group: {{ studentInfo.group }}</h3>
         </div>
     </mat-card-content>
 </mat-card>

@@ -1,0 +1,32 @@
+.otherInfo {
+    background-color: rgb(235, 235, 235);
+    text-align: left;
+    border-radius: 16px;
+    padding: 20px;
+    height: 280px;
+
+    mat-card-title {
+        font-size: larger;
+        font-weight: 700;
+
+        .mat-icon {
+            vertical-align: middle;
+            padding-right: 8px;
+        }
+    }
+
+    mat-card-content {
+        height: 144px;
+    }
+
+    mat-card-actions {
+        position: relative;
+
+        button {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            background-color: #AE445A;
+        }
+    }
+}

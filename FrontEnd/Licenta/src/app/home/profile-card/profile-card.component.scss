@@ -1,19 +1,27 @@
 .profile {
-    background-color: white;
-    text-align: center;
+    background-color: rgb(235, 235, 235);
     border-radius: 16px;
-    padding: 20px 0;
+    height: 500px;
 
-    img {
-        border-radius: 50%;
-    }
+    mat-card-content {
+        margin: 20px 0px;
+        padding: 10px;
+        display: block;
+        text-align: center;
 
-    .line {
-        height: 2px;
-        background-color: rgb(34, 34, 34);
-    }
-
-    .details {
-        padding-top: 4%;
+        img {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+    
+        .line {
+            height: 2px;
+            background-color: rgb(34, 34, 34);
+        }
+    
+        .details {
+            padding-top: 4%;
+        }
     }
 }

@@ -1,7 +1,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 40px;
+    gap: 20px;
     grid-template-areas:
         "a a a b b b b b"
         "a a a b b b b b"

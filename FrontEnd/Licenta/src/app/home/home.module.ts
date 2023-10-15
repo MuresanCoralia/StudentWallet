@@ -5,7 +5,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { InfoCardComponent } from './info-card/info-card.component';
-import { OtherInfoCardComponent } from './other-info-card/other-info-card.component';
+import { OtherInfoCardComponent } from './notes-card/other-info-card.component';
+import { CoreModule } from '../core/core.module';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { OtherInfoCardComponent } from './other-info-card/other-info-card.compon
   imports: [
     CommonModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    CoreModule,
+    MatButtonModule
   ]
 })
 export class HomeModule { }
