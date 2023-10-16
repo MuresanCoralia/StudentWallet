@@ -3,13 +3,13 @@ import { Student } from 'src/app/core/models/student.model';
 import { StudentService } from 'src/app/core/services/student.service';
 
 @Component({
-  selector: 'app-profile-card',
-  templateUrl: './profile-card.component.html',
-  styleUrls: ['./profile-card.component.scss']
+  selector: 'app-info-card',
+  templateUrl: './info-card.component.html',
+  styleUrls: ['./info-card.component.scss']
 })
-export class ProfileCardComponent implements OnInit {
+export class InfoCardComponent implements OnInit {
 
-  studentInfo!: Student;
+  studentInfo!: Student; 
 
   constructor(private studentService: StudentService) {}
 
@@ -18,7 +18,7 @@ export class ProfileCardComponent implements OnInit {
   }
 
   private getStudent(): void {
-    this.studentService.getData(3).subscribe((res) => {
+    this.studentService.getData(1).subscribe((res) => {
       this.studentInfo = res[0];
     });
   }
