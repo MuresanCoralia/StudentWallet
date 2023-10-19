@@ -18,7 +18,7 @@ export class InfoCardComponent implements OnInit {
   }
 
   private getStudent(): void {
-    this.studentService.getData(1).subscribe((res) => {
+    this.studentService.getData(2).subscribe((res) => {
       this.studentInfo = res[0];
     });
   }
