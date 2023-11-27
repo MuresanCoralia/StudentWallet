@@ -1,15 +1,15 @@
 <h2 mat-dialog-title>Notes</h2>
-<div mat-dialog-content class="dialog">
-    <form class="form">
+<div mat-dialog-content>
+    <form>
         <mat-form-field>
             <mat-label>Notes</mat-label>
-            <textarea matInput #input formControlName="notes" maxlength="2500"></textarea>
-            <mat-hint class="length" align="end">{{ input.value.length }}/2500</mat-hint>
+            <textarea matInput #input maxlength="2500"></textarea>
+        <mat-hint>{{ input.value.length }}/2500</mat-hint>
         </mat-form-field>
     </form>
 </div>
-<div mat-dialog-actions class="dialog-actions">
-    <button mat-stroked-button color="primary" mat-dialog-close>Cancel</button>
-    <button mat-flat-button color="primary" type="submit" (click)="saveNote()">Save</button>
+<div mat-dialog-actions>
+    <button mat-stroked-button mat-dialog-close>Cancel</button>
+    <button mat-flat-button type="submit" (click)="saveNote()">Save</button>
 </div>
 

@@ -3,7 +3,8 @@
     text-align: left;
     border-radius: 16px;
     padding: 20px;
-    height: 280px;
+    margin-top: 16px;
+    max-height: calc(100vh - 292px);
 
     mat-card-title {
         font-size: larger;
@@ -16,16 +17,14 @@
     }
 
     mat-card-content {
-        height: 144px;
+        overflow-y: auto;
     }
-
+    
     mat-card-actions {
-        position: relative;
+        display: block;
 
         button {
-            position: absolute;
-            right: 0px;
-            bottom: 0px;
+            float: right;
             background-color: #AE445A;
         }
     }

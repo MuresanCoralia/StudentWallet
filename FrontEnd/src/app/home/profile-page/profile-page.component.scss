@@ -1,24 +1,17 @@
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 20px;
-    grid-template-areas:
-        "a a a b b b b b"
-        "a a a b b b b b"
-        "a a a c c c c c"
-        "a a a c c c c c";
+    display: flex;
     margin: 8px;
+    gap: 16px;
+    height: calc(100vh - 48px);
 }
 
-.item1 {
-    grid-area: a;
+.profile {
+    height: calc(100vh - 60px);
+    width: 40vw;
 }
 
-.item2 {
-    grid-area: b;
-    align-self: start;
-}
-
-.item3 {
-    grid-area: c;
+.general-info {
+    display: block;
+    height: calc(100vh - 60px);
+    width: calc(60vw - 16px);
 }

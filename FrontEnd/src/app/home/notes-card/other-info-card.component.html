@@ -1,7 +1,7 @@
 <mat-card class="otherInfo">
     <mat-card-title><mat-icon>fingerprint</mat-icon>Notes</mat-card-title><br>
     <mat-card-content *ngIf="studentInfo">
-        <div>{{ studentInfo.others }} Also. Here we will make a scratch pad for students. Ex: 12 ianuarie exam at CAD, etc</div>
+        {{ studentInfo.others }} Also. Here we will make a scratch pad for students. Ex: 12 ianuarie exam at CAD, etc
     </mat-card-content>
     <mat-card-actions>
         <button mat-raised-button (click)="openNotes()">Add notes!</button>

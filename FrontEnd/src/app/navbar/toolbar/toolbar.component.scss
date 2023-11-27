@@ -1,11 +1,13 @@
 mat-toolbar {
-    position: relative;
+    display: inline-block;
     background-color: rgb(25, 25, 25);
     gap: 16px;
+    width: 100vw;
+    overflow: hidden;
 
     .login {
-        position: absolute;
-        right: 40px;
+        float: right;
+        margin-right: 16px;
         font-weight: 700;
         font-size: large;
         color: red;

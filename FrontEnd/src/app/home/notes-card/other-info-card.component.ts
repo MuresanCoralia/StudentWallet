@@ -13,7 +13,7 @@ export class OtherInfoCardComponent implements OnInit {
 
   studentInfo!: Student;
 
-  constructor(private studentService: StudentService, public dialog: MatDialog) {}
+  constructor(private studentService: StudentService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.getStudent();
@@ -25,15 +25,15 @@ export class OtherInfoCardComponent implements OnInit {
     });
   }
 
-  // open dialog to save a new category
+  // open dialog to create notes
   public openNotes(): void {
     const dialogRef = this.dialog.open(DialogNotesComponent, {
-        width: '40%',
-        enterAnimationDuration: '500ms',
-        exitAnimationDuration: '120ms'
+      width: '40%',
+      enterAnimationDuration: '500ms',
+      exitAnimationDuration: '120ms'
     });
     dialogRef.afterClosed().subscribe(() => {
-        this.getStudent();
+      this.getStudent();
     });
-}
+  }
 }
