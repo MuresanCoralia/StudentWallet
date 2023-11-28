@@ -1,0 +1,27 @@
+.title {
+    font-weight: 700;
+}
+
+.content {
+    overflow: hidden;
+
+    .notes {
+        width: 100%;
+        height: 300px;
+        resize: none;
+    }
+}
+
+.actions {
+    float: right;
+    padding: 0px 20px 16px 24px;
+
+    .cancel {
+        border-color: #AE445A;
+        color: #AE445A;
+    }
+
+    .save {
+        background-color: #AE445A;
+    }
+}

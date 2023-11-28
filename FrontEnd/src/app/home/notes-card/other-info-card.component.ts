@@ -20,8 +20,8 @@ export class OtherInfoCardComponent implements OnInit {
   }
 
   private getStudent(): void {
-    this.studentService.getData(2).subscribe((res) => {
-      this.studentInfo = res[0];
+    this.studentService.getStudentById(2).subscribe((res) => {
+      this.studentInfo = res;
     });
   }
 
@@ -30,7 +30,8 @@ export class OtherInfoCardComponent implements OnInit {
     const dialogRef = this.dialog.open(DialogNotesComponent, {
       width: '40%',
       enterAnimationDuration: '500ms',
-      exitAnimationDuration: '120ms'
+      exitAnimationDuration: '120ms',
+      data: this.studentInfo.others
     });
     dialogRef.afterClosed().subscribe(() => {
       this.getStudent();

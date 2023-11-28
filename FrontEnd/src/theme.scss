@@ -1,0 +1,56 @@
+@use '@angular/material' as mat;
+@import '@angular/material/theming';
+@include mat.core();
+
+$purple: (
+    50: #f0e5fc,
+    100: #d6bff7,
+    200: #bb94f3,
+    300: #9e66ef,
+    400: #873feb,
+    500: #6d00e6,
+    600: #6100e0,
+    700: #4f00d8,
+    800: #3b00d3,
+    900: #0e00c4,
+    contrast: (
+        50: black,
+        100: black,
+        200: black,
+        300: black,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white
+    )
+);
+
+$pink: (
+    50: #fae1f0,
+    100: #f3b2d9,
+    200: #ee7ebe,
+    300: #eb3fa3,
+    400: #ea008c,
+    500: #e70073,
+    600: #d60070,
+    700: #bf006a,
+    800: #a80065,
+    900: #80005d,
+    contrast: (
+        50: black,
+        100: black,
+        200: black,
+        300: black,
+        400: black,
+        500: black,
+        600: black,
+        700: black,
+        800: black,
+        900: white
+    )
+);
+
+$primary-palette: mat.define-palette($purple, 400);
+$accent-palette: mat.define-palette($pink, 300);

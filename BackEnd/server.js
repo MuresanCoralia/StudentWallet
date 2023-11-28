@@ -37,10 +37,10 @@ server.listen(8085, function check(error) {
 
 server.use(function (request, response, next) {
     response.header("Access-Control-Allow-Origin", "*");
+    response.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
     response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
-
 
 // Create the Records
 server.post("/api/student/add", (req, res) => {
@@ -93,28 +93,21 @@ server.get("/api/student/:id", (req, res) => {
 // Update the Records
 server.put("/api/student/update/:id", (req, res) => {
     let sql =
-        "UPDATE student SET name='" +
-        req.body.name +
-        "', surname='" +
-        req.body.surname +
-        "', email='" +
-        req.body.email +
-        "', password='" +
-        req.body.password +
-        "', specialization='" +
-        req.body.specialization +
-        "', year='" +
-        req.body.year +
-        "', group='" +
-        req.body.group +
-        "', others='" +
-        req.body.others +
-        "', orarid='" +
-        req.body.orarid +
-        "'  WHERE id=" +
-        req.params.id;
+        "UPDATE student SET ? WHERE id=?";
+    
+    let details = {
+        name: req.body.name,
+        surname: req.body.surname,
+        email: req.body.email,
+        password: req.body.password,
+        specialization: req.body.specialization,
+        year: req.body.year,
+        group: req.body.group,
+        others: req.body.others,
+        orarid: req.body.orarid,
+    };
 
-    let a = db.query(sql, (error, result) => {
+    db.query(sql, [details, req.params.id], (error, result) => {
         if (error) {
             res.send({ status: false, message: "Student Updated Failed" });
         } else {
