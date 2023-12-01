@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { HomeModule } from './home/home.module';
 import { ScheduleModule } from './schedule/schedule.module';
-import { LoginModule } from './login/login.module';
+import { LoginModule } from './authentication/login.module';
 
 @NgModule({
   declarations: [

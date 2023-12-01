@@ -1,0 +1,27 @@
+<div class="authentication">
+    <form class="authenticationForm">
+        <h1 class="title">Register</h1>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Confirm Password</mat-label>
+            <input matInput type="password">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+        <button mat-raised-button (click)="register()">Register</button>
+        <a href="/login">Already have an account? Login!</a>
+    </form>
+</div>

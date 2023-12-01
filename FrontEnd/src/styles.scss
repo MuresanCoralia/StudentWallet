@@ -1,8 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-
 @use '@angular/material' as mat;
-@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import './theme.scss';
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
 body {
     margin: 0;
@@ -11,4 +9,43 @@ body {
     height: 100vh;
     background-image: linear-gradient(to bottom right, #E8BCB9, #F39F5A, #AE445A, #662549, #451952, #1D1A39);
     overflow: hidden;
+}
+
+.authentication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .authenticationForm {
+        display: block;
+        align-items: center;
+        padding: 24px 24px 32px 24px;
+        background-color: rgb(235, 235, 235);
+        height: auto;
+        width: 450px;
+
+        .title {
+            margin-top: 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        mat-form-field {
+            width: 100%;
+        }
+
+        button {
+            height: 35px;
+            width: 100%;
+            font-weight: 600;
+            border-radius: 4px;
+            margin: 16px 0px 24px 0px;
+            background-color: #AE445A;
+        }
+
+        a {
+            float: right;
+        }
+    }
 }
